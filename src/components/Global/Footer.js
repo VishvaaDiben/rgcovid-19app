@@ -25,7 +25,7 @@ import {
   RedditShareCount,
   TumblrShareCount,
 } from "react-share"
-import { FaTwitter, FaFacebook, FaWhatsapp } from "react-icons/fa"
+import { FaTwitter, FaFacebook, FaWhatsapp, FaLinkedin } from "react-icons/fa"
 
 export default function Footer({ hero }) {
   return (
@@ -70,6 +70,12 @@ export default function Footer({ hero }) {
               >
                 <FaTwitter />
               </TwitterShareButton>
+              <LinkedinShareButton
+              url={"https://covid-19-mys-update.netlify.com/"}
+              className="shareBtn col-md-1 col-sm-1 col-xs-1">
+                <FaLinkedin/>
+              </LinkedinShareButton>
+
             </div>
           </div>
         </div>
