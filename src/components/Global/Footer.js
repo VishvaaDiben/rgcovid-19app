@@ -48,7 +48,7 @@ export default function Footer({ hero }) {
               </WhatsappShareButton>
               <FacebookShareButton
                 url={
-                  "https://www.facebook.com/sharer/sharer.php?u=https://covid-19-mys-update.netlify.com/"
+                  "https://covid-19-mys-update.netlify.com/"
                 }
                 title="www.test.Netlify"
                 className="shareBtn col-md-1 col-sm-1 col-xs-1"
@@ -57,7 +57,7 @@ export default function Footer({ hero }) {
               </FacebookShareButton>
               <FacebookShareCount
                 url={
-                  "https://www.facebook.com/sharer/sharer.php?u=https://covid-19-mys-update.netlify.com/"
+                  "https://covid-19-mys-update.netlify.com/"
                 }
               >
                 {shareCount => (
@@ -65,7 +65,7 @@ export default function Footer({ hero }) {
                 )}
               </FacebookShareCount>
               <TwitterShareButton
-                url={"https://twitter.com/intent/tweet/?text=https://covid-19-mys-update.netlify.com/"}
+                url={"https://covid-19-mys-update.netlify.com/"}
                 className="shareBtn col-md-1 col-sm-1 col-xs-1"
               >
                 <FaTwitter />
