@@ -50,7 +50,7 @@ export default function Footer({ hero }) {
                 url={
                   "https://covid-19-mys-update.netlify.com/"
                 }
-                title="www.test.Netlify"
+                title="https://covid-19-mys-update.netlify.com/"
                 className="shareBtn col-md-1 col-sm-1 col-xs-1"
               >
                 <FaFacebook />
