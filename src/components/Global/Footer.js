@@ -40,8 +40,9 @@ export default function Footer({ hero }) {
               Share the site
               </h6>
               <WhatsappShareButton
-                url={"https://wa.me/?text=https://covid-19-mys-update.netlify.com/"}
+                url={"https://wa.me/"}
                 className="shareBtn col-md-1 col-sm-1 col-xs-1"
+                text={"https://covid-19-mys-update.netlify.com/"}
               >
                 <FaWhatsapp />
               </WhatsappShareButton>
