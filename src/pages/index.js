@@ -1,20 +1,25 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Stats from "../components/Dashboard/Stats"
+import SpecificStats from "../components/Dashboard/SpecificStats"
+import CountrySelector from "../components/Dashboard/CountrySelector"
+
+import "font-awesome/css/font-awesome.min.css"
+import ScrollUpButton from "react-scroll-up-button"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SEO title="Covid-19-News" />
+    <h3 className="text-center">[Global Overall Stat]</h3>
+    <Stats></Stats>
+    <hr />
+    <h3 className="text-center">[Specific Country Stat]</h3>
+    <CountrySelector></CountrySelector>
+
+    <SpecificStats></SpecificStats>
+    <ScrollUpButton/>
   </Layout>
 )
 
