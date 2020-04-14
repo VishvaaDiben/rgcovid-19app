@@ -4,6 +4,7 @@ import "leaflet/dist/leaflet.css"
 import styled from "styled-components"
 import axios from "axios"
 import "./Map.css"
+// import root from 'window-or-global'
 
 //wrapper for map
 
@@ -12,9 +13,7 @@ const Wrapper = styled.div`
   height: ${props => props.height};
 `
 
-if (typeof window === 'undefined') {
-  global.window = {}
-}
+
 export default class Map extends React.Component {
   async componentDidMount() {
     
@@ -124,6 +123,7 @@ export default class Map extends React.Component {
             html,
           }),
           riseOnHover: true,
+          
         })
       },
     })
@@ -131,6 +131,7 @@ export default class Map extends React.Component {
 
     
   }
+
 
   render() {
     return <Wrapper className="col-12" height="400px" id="map" />
