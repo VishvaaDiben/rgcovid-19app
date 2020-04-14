@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import Stats from "../components/Dashboard/Stats"
 import SpecificStats from "../components/Dashboard/SpecificStats"
 import CountrySelector from "../components/Dashboard/CountrySelector"
-
+import Map from "../components/Map/Map"
 import "font-awesome/css/font-awesome.min.css"
 import ScrollUpButton from "react-scroll-up-button"
 
@@ -19,7 +19,8 @@ const IndexPage = () => (
     <CountrySelector></CountrySelector>
 
     <SpecificStats></SpecificStats>
-    <ScrollUpButton/>
+    <ScrollUpButton />
+    <Map />
   </Layout>
 )
 

@@ -4,8 +4,6 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Main from "../components/Global/Main"
-import Infoblock from "../components/Global/Infoblock"
-import DualInfoblock from "../components/Global/DualInfoblock"
 import About from "../components/About/About"
 
 import "font-awesome/css/font-awesome.min.css"
