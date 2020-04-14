@@ -27,7 +27,7 @@ export default class Map extends React.Component {
     })
 
     L.tileLayer(
-      "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png",
+      "http://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png",
       {
         detectRetina: false,
         maxZoom: L.Browser.retina ? 12 : 11,
