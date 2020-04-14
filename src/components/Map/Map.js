@@ -11,9 +11,13 @@ const Wrapper = styled.div`
   width: ${props => props.width};
   height: ${props => props.height};
 `
+const windowGlobal = typeof window !== 'undefined' && window
+windowGlobal.localStorage
 
 export default class Map extends React.Component {
   async componentDidMount() {
+
+
     this.map = L.map("map", {
       //   center: [0, 0],
       zoom: 6,
@@ -124,8 +128,7 @@ export default class Map extends React.Component {
     })
     geoJsonLayers.addTo(this.map)
 
-    const windowGlobal = typeof window !== 'undefined' && window
-    windowGlobal.localStorage
+    
   }
 
   render() {
