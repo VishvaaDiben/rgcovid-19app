@@ -124,10 +124,8 @@ export default class Map extends React.Component {
     })
     geoJsonLayers.addTo(this.map)
 
-    let windowsize = 900
-    if (typeof window !== "undefined") {
-      windowsize = useWindowSize()
-    }
+    const windowGlobal = typeof window !== 'undefined' && window
+    windowGlobal.localStorage
   }
 
   render() {
