@@ -19,40 +19,23 @@ export default class Map extends React.Component {
     
 
     this.map = L.map("map", {
-      //   center: [0, 0],
       zoom: 6,
       zoomControl: false,
-      //   minZoom: 1,
-      maxZoom: 10,
+      // maxZoom: 10,
     })
 
     L.tileLayer(
       "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png",
       {
-        // attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributor',
-        detectRetina: false,
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributor',
         maxZoom: L.Browser.retina ? 12 : 11,
+        detectRetina: false,
         maxNativeZoom: L.Browser.retina ? 10 : 11 ,
         noWrap: true,
       }
     ).addTo(this.map)
-    // let LeafIcon = L.Icon.extend({
-    //   options: {
-    //     iconSize: [38, 95],
-    //     iconAnchor: [22, 94],
-    //     popupAnchor: [-3, -76],
-    //   },
-    // })
-    // let greenIcon = new LeafIcon({
-    //   iconUrl: "http://leafletjs.com/examples/custom-icons/leaf-green.png",
-    // })
-
-    // L.marker([50.5, 30.5], { icon: greenIcon }).addTo(this.map)
 
     this.map.setView([1, 1], 1)
-    // this.map.dragging.disable()
-    // this.map.fitWorld()
-    // this.map.invalidateSize()
 
     let response
 
