@@ -13,11 +13,8 @@ const Wrapper = styled.div`
   height: ${props => props.height};
 `
 
-
 export default class Map extends React.Component {
   async componentDidMount() {
-    
-
     this.map = L.map("map", {
       zoom: 6,
       zoomControl: false,
@@ -27,11 +24,12 @@ export default class Map extends React.Component {
     L.tileLayer(
       "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png",
       {
-        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributor',
-        maxZoom: L.Browser.retina ? 12 : 11,
-        detectRetina: false,
-        maxNativeZoom: L.Browser.retina ? 10 : 11 ,
+        maxZoom: 20,
+        attribution:
+          '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+        detectRetina: true,
         noWrap: true,
+        // maxNativeZoom: L.Browser.retina ? 10 : 11,
       }
     ).addTo(this.map)
 
@@ -107,15 +105,11 @@ export default class Map extends React.Component {
             html,
           }),
           riseOnHover: true,
-          
         })
       },
     })
     geoJsonLayers.addTo(this.map)
-
-    
   }
-
 
   render() {
     return <Wrapper className="col-12" height="400px" id="map" />
