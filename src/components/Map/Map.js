@@ -19,6 +19,7 @@ export default class Map extends React.Component {
       maxZoom: 19,
       // zoom: 6,
       zoomControl: false,
+      trackResize: false
     })
 
     L.tileLayer(
