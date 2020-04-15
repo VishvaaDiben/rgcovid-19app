@@ -19,19 +19,17 @@ export default class Map extends React.Component {
       maxZoom: 19,
       // zoom: 6,
       zoomControl: false,
-      trackResize: false
+      trackResize: false,
     })
 
-    L.tileLayer(
-      'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-      {
-        maxZoom: 19,
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        detectRetina: false,
-        noWrap: true,
-        // maxNativeZoom: L.Browser.retina ? 10 : 11,
-      }
-    ).addTo(this.map)
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      detectRetina: false,
+      noWrap: true,
+      // maxNativeZoom: L.Browser.retina ? 10 : 11,
+    }).addTo(this.map)
 
     this.map.setView([1, 1], 1)
     this.map.invalidateSize()
@@ -104,7 +102,9 @@ export default class Map extends React.Component {
             className: "icon",
             html,
           }),
-  
+          riseOnHover: true,
+        }).on("click", function(e) {
+          alert(e.latlng)
         })
       },
     })
