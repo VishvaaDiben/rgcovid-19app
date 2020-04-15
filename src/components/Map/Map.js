@@ -34,7 +34,7 @@ export default class Map extends React.Component {
     ).addTo(this.map)
 
     this.map.setView([1, 1], 1)
-
+    this.map.invalidateSize()
     let response
 
     try {
