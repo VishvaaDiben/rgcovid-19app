@@ -23,12 +23,13 @@ export default class Map extends React.Component {
       zoom: 6,
       zoomControl: false,
       //   minZoom: 1,
-      // maxZoom: 1,
+      maxZoom: 10,
     })
 
     L.tileLayer(
       "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png",
       {
+        // attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributor',
         detectRetina: false,
         maxZoom: L.Browser.retina ? 12 : 11,
         maxNativeZoom: L.Browser.retina ? 10 : 11 ,
