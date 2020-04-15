@@ -16,9 +16,9 @@ const Wrapper = styled.div`
 export default class Map extends React.Component {
   async componentDidMount() {
     this.map = L.map("map", {
-      zoom: 6,
+      maxZoom: 19,
+      // zoom: 6,
       zoomControl: false,
-      // maxZoom: 10,
     })
 
     L.tileLayer(
