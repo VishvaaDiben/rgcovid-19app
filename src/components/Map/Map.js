@@ -103,8 +103,6 @@ export default class Map extends React.Component {
             html,
           }),
           riseOnHover: true,
-        }).on("click", function(e) {
-          alert(e.latlng)
         })
       },
     })
