@@ -104,7 +104,8 @@ export default class Map extends React.Component {
             className: "icon",
             html,
           }),
-          riseOnHover: true,
+          clickable: true,
+          riseOnHover:false
         })
       },
     })
