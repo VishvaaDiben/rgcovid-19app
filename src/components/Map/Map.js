@@ -27,7 +27,7 @@ export default class Map extends React.Component {
         maxZoom: 20,
         attribution:
           '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
-        detectRetina: true,
+        detectRetina: false,
         noWrap: true,
         // maxNativeZoom: L.Browser.retina ? 10 : 11,
       }
