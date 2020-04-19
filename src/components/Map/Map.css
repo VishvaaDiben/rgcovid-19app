@@ -15,6 +15,7 @@
 .icon-marker:hover .icon-marker-tooltip {
   display: block;
 }
+
 .icon-marker-tooltip {
   display: none;
   position: absolute;

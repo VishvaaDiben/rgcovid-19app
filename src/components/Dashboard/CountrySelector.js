@@ -4,7 +4,7 @@ import { useState } from "react"
 import SpecificStats from "../Dashboard/SpecificStats"
 
 export default function CountrySelector() {
-  const countries = useStats("https://corona.lmao.ninja/countries")
+  const countries = useStats("https://corona.lmao.ninja/v2/countries")
   const [selectedCountry, setSelectedCountry] = useState("Malaysia")
   if (!countries) return <p>Fetching Specific Countries Data ...</p>
   return (
@@ -28,7 +28,7 @@ export default function CountrySelector() {
         })}
       </select>
       <SpecificStats
-        url={`https://corona.lmao.ninja/countries/${selectedCountry}`}
+        url={`https://corona.lmao.ninja/v2/countries/${selectedCountry}`}
       ></SpecificStats>
     </div>
   )

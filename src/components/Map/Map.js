@@ -36,7 +36,7 @@ export default class Map extends React.Component {
     let response
 
     try {
-      response = await axios.get("https://corona.lmao.ninja/countries")
+      response = await axios.get("https://corona.lmao.ninja/v2/countries")
     } catch (e) {
       console.log(`Failed to fetch countries: ${e.message}`, e)
       return
@@ -84,7 +84,7 @@ export default class Map extends React.Component {
 
         const html = `
             <span class="icon-marker">
-              <span class="icon-marker-tooltip">
+              <span class="icon-marker-tooltip" >
                 <h2>${country}</h2>
                 <ul>
                   <li><strong>Confirmed:</strong> ${cases}</li>
@@ -96,6 +96,14 @@ export default class Map extends React.Component {
               ${casesString}
             </span>
           `
+
+        this.map.on("click", function(e) {
+          let popLocation = e.latlng
+          let popup = L.marker.bindPopup(`<p>${country}</p>`)
+            .setLatLng(popLocation)
+          return popup
+        })
+        
 
         return L.marker(latlng, {
           icon: L.divIcon({
