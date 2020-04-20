@@ -8,6 +8,7 @@ import CountrySelector from "../components/Dashboard/CountrySelector"
 import Map from "../components/Map/Map"
 import "font-awesome/css/font-awesome.min.css"
 import ScrollUpButton from "react-scroll-up-button"
+import "../components/layout.css"
 
 const IndexPage = () => (
   <Layout>

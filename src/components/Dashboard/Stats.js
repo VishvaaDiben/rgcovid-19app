@@ -10,7 +10,7 @@ export default function Stats() {
   return (
     <div>
       <div className="card-group text-center">
-        <div className="card text-white bg-secondary">
+        <div className="card text-white bg-color-confirmed">
           <div className="card-header">
             <h5 className="card-title">Confirmed:</h5>
           </div>
@@ -23,7 +23,7 @@ export default function Stats() {
             </small>
           </div>
         </div>
-        <div className="card text-white bg-danger">
+        <div className="card text-white bg-color-death">
           <div className="card-header">
             <h5 className="card-title">Deaths:</h5>
           </div>
@@ -36,7 +36,7 @@ export default function Stats() {
             </small>
           </div>
         </div>
-        <div className="card text-white bg-success">
+        <div className="card text-white bg-color-recover">
           <div className="card-header">
             <h5 className="card-title">Recovered:</h5>
           </div>

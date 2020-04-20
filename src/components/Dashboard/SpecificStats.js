@@ -10,7 +10,7 @@ export default function SpecificStats({url}) {
   return (
     <div>
       <div className="card-group text-center">
-        <div className="card text-white bg-secondary">
+        <div className="card text-white bg-color-confirmed">
           <div className="card-header">
             <h5 className="card-title">Total Cases:</h5>
           </div>
@@ -24,9 +24,9 @@ export default function SpecificStats({url}) {
             </small>
           </div>
         </div>
-        <div className="card text-white bg-danger">
+        <div className="card text-white bg-color-death">
           <div className="card-header">
-            <h5 className="card-title">Total Deaths:</h5>
+            <h5 className="card-title">Deaths:</h5>
           </div>
           <div className="card-body">
             <h1 className="card-text">{stats.deaths}</h1>
@@ -37,9 +37,9 @@ export default function SpecificStats({url}) {
             </small>
           </div>
         </div>
-        <div className="card text-white bg-success">
+        <div className="card text-white bg-color-recover">
           <div className="card-header">
-            <h5 className="card-title">Total Recovered:</h5>
+            <h5 className="card-title">Recovered:</h5>
           </div>
           <div className="card-body">
             <h1 className="card-text">{stats.recovered}</h1>
@@ -50,7 +50,7 @@ export default function SpecificStats({url}) {
             </small>
           </div>
         </div>
-        <div className="card text-white bg-warning">
+        <div className="card text-white bg-color-active">
           <div className="card-header">
             <h5 className="card-title">Active Cases:</h5>
           </div>
@@ -63,7 +63,7 @@ export default function SpecificStats({url}) {
             </small>
           </div>
         </div>
-        <div className="card text-white bg-primary">
+        <div className="card text-white bg-color-critical">
           <div className="card-header">
             <h5 className="card-title">Serious Critical:</h5>
           </div>
@@ -76,7 +76,7 @@ export default function SpecificStats({url}) {
             </small>
           </div>
         </div>
-        <div className="card text-white bg-dark">
+        <div className="card text-white bg-color-today-death">
           <div className="card-header">
             <h5 className="card-title">Today Deaths:</h5>
           </div>
@@ -89,7 +89,7 @@ export default function SpecificStats({url}) {
             </small>
           </div>
         </div>
-        <div className="card text-white bg-info">
+        <div className="card text-white bg-color-today-case">
           <div className="card-header">
             <h5 className="card-title">Today Cases:</h5>
           </div>

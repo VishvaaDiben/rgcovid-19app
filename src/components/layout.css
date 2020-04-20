@@ -2,14 +2,6 @@
   background-color: dimgray;
 }
 
-.navbar-toggler-icon {
-  /* display: block; */
-  /* background-color: greenyellow;
-  border-color: #444;
-  background: none;
-  outline: 0; */
-}
-
 .main-section-bg{
   min-height: 80vh;
   /* display: flex; */
@@ -27,6 +19,34 @@
 .btn-primary{
   margin: 5px;
   padding: 8px 35px;
+}
+
+.bg-color-confirmed{
+background:linear-gradient(135deg, #CE9FFC 0%,#7367F0 100%);
+}
+
+.bg-color-death{
+  background:linear-gradient(135deg, #F5515F 0%,#A1051D 100%);
+}
+
+.bg-color-recover{
+  background:linear-gradient(135deg, #c3ec52 0%,#0ba29d 100%);
+}
+
+.bg-color-active{
+  background:linear-gradient(135deg, #fad961 0%,#f76b1c 100%);
+}
+
+.bg-color-critical{
+  background:linear-gradient(135deg, #F36265 0%,#961276 100%);
+}
+
+.bg-color-today-death{
+  background:linear-gradient(135deg, #46464b 0%,#212125 100%);
+}
+
+.bg-color-today-case{
+  background:linear-gradient(135deg, #3d7b8a 0%,#1c4652 100%);
 }
 
 /* .card {
