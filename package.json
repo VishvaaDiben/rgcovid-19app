@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.30.2",
     "font-awesome": "^4.7.0",
     "gatsby": "^5.15.0",
     "gatsby-background-image": "^1.0.1",
